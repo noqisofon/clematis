@@ -1,0 +1,14 @@
+# Emacs template files
+*~
+\#*#
+
+# Windows Executable files
+*.exe
+*.dll
+
+# MonoDevelop files
+*.userprefs
+
+# Visual Studio files
+*.suo
+*.user
