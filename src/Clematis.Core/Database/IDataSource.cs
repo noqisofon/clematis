@@ -13,14 +13,16 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 //
+using System;
 
 
-namespace Clematis.Infrastructure {
+namespace Clematis.Database {
 
 
     /// <summary>
-    /// 
+    /// I data source.
     /// </summary>
-    public class ResultContext {
+    public interface IDataSource {
     }
 }
+

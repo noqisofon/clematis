@@ -15,12 +15,12 @@
 //
 
 
-namespace Clematis.Infrastructure {
+namespace Clematis.Database {
 
 
     /// <summary>
     /// 
     /// </summary>
-    public class ResultContext {
+    public interface ISqlConnection {
     }
 }

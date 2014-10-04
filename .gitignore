@@ -4,6 +4,7 @@
 # User-specific files
 *.suo
 *.user
+*.userprefs
 *.sln.docstates
 
 # Build results
@@ -155,3 +156,7 @@ $RECYCLE.BIN/
 # Mac desktop service store files
 .DS_Store
 packages
+
+# Emacs temporary files
+*~
+\#*#

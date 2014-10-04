@@ -13,14 +13,21 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 //
+using System;
 
 
-namespace Clematis.Infrastructure {
+namespace Clematis.Infrastructure.Caching {
 
 
     /// <summary>
-    /// 
+    /// I cache.
     /// </summary>
-    public class ResultContext {
+    public interface ICache {
+        /// <summary>
+        /// Gets or sets the identifier.
+        /// </summary>
+        /// <value>The identifier.</value>
+        string Id { get; set; }
     }
 }
+
