@@ -13,11 +13,13 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 // 
-using System;
 using System.Collections.Generic;
+using System.Linq;
+
+using Clematis.Infrastructure.Mapping;
 
 
-namespace Clematis.Executor {
+namespace Clematis.Infrastructure.Executors {
 
 
     /// <summary>
@@ -25,14 +27,14 @@ namespace Clematis.Executor {
     /// </summary>
     public class BatchResult {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Clematis.BatchResult"/> class.
+        /// Initializes a new instance of the <see cref="BatchResult"/> class.
         /// </summary>
         /// <param name="mapped_statement">Mapped_statement.</param>
         /// <param name="sql_query">Sql_query.</param>
         public BatchResult(MappedStatement mapped_statement, string sql_query) {
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="Clematis.BatchResult"/> class.
+        /// Initializes a new instance of the <see cref="BatchResult"/> class.
         /// </summary>
         /// <param name="mapped_statement">Mapped_statement.</param>
         /// <param name="sql_query">Sql_query.</param>

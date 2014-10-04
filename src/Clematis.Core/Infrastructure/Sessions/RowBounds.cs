@@ -13,10 +13,8 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 // 
-using System;
 
-
-namespace Clematis {
+namespace Clematis.Infrastructure.Sessions {
 
 
     /// <summary>
@@ -24,7 +22,7 @@ namespace Clematis {
     /// </summary>
     public class RowBounds {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Clematis.RowBounds"/> class.
+        /// Initializes a new instance of the <see cref="RowBounds"/> class.
         /// </summary>
         public RowBounds() {
         }

@@ -1,18 +1,41 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Clematis.Core", "Clematis.Core\Clematis.Core.shproj", "{5E07EBDA-2259-4217-8526-1A9FFA686668}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clematis.Core", "Clematis.Core\Clematis.Core.csproj", "{334C6585-7B3E-45D2-9B35-D3B75B9596DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{44DD88E6-BBD1-4A67-A285-75EAB77DDB9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{646DBE24-4E10-4605-AFE0-86D962222AA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clematis.Core.Tests", "Clematis.Core.Tests\Clematis.Core.Tests.csproj", "{5FCCD9FF-A621-400F-B68E-7FC3EC8CD603}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E5268460-88E0-4C82-A6C8-61BECF114C31}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{334C6585-7B3E-45D2-9B35-D3B75B9596DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334C6585-7B3E-45D2-9B35-D3B75B9596DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334C6585-7B3E-45D2-9B35-D3B75B9596DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334C6585-7B3E-45D2-9B35-D3B75B9596DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FCCD9FF-A621-400F-B68E-7FC3EC8CD603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FCCD9FF-A621-400F-B68E-7FC3EC8CD603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FCCD9FF-A621-400F-B68E-7FC3EC8CD603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FCCD9FF-A621-400F-B68E-7FC3EC8CD603}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		Policies = $0
-		$0.StandardHeader = $1
-		$1.Text = @\n Copyright ${Year}  ${CopyrightHolder}\n\n   Licensed under the Apache License, Version 2.0 (the "License");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an "AS IS" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.
-		$1.IncludeInNewFiles = True
-		outputpath = ..\build\bin
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{334C6585-7B3E-45D2-9B35-D3B75B9596DA} = {44DD88E6-BBD1-4A67-A285-75EAB77DDB9E}
+		{5FCCD9FF-A621-400F-B68E-7FC3EC8CD603} = {646DBE24-4E10-4605-AFE0-86D962222AA5}
 	EndGlobalSection
 EndGlobal
