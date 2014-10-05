@@ -42,10 +42,18 @@ namespace Clematis.Configurations {
         }
 
 
+        /// <summary>
+        /// Gets or sets the auto mapping behavior.
+        /// </summary>
+        /// <value>The auto mapping behavior.</value>
         public AutoMappingBehavior AutoMappingBehavior {
             get { return this.auto_mapping_behavior_; }
             set { this.auto_mapping_behavior_ = value; }
         }
+        /// <summary>
+        /// Gets the caches.
+        /// </summary>
+        /// <value>The caches.</value>
         public IEnumerable<ICache> Caches {
             get { return this.caches_.Values; }
         }
