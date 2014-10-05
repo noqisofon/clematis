@@ -16,12 +16,11 @@
 
 using System.Collections.Generic;
 
-using Clematis.Configurations;
+using Clematis.Database;
 using Clematis.Infrastructure.Executors;
-using Clematis.Infrastructure.Sessions;
 
 
-namespace Clematis.Infrastructure {
+namespace Clematis.Infrastructure.Sessions {
 
 
     /// <summary>
@@ -233,5 +232,5 @@ namespace Clematis.Infrastructure {
     /// <summary>
     /// Result handler.
     /// </summary>
-    public delegate void ResultHandler(ResultContext context);
+    public delegate void ResultHandler(IResultContext context);
 }

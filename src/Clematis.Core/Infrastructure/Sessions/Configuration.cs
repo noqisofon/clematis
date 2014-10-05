@@ -13,17 +13,14 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 //  
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 using Clematis.Infrastructure.Caching;
 using Clematis.Infrastructure.Mapping;
-using Clematis.Infrastructure.Sessions;
 
 
-namespace Clematis.Configurations {
+namespace Clematis.Infrastructure.Sessions {
 
 
     /// <summary>
@@ -31,11 +28,11 @@ namespace Clematis.Configurations {
     /// </summary>
     public class Configuration {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Clematis.Configurations.Configuration"/> class.
+        /// Initializes a new instance of the <see cref="Configuration"/> class.
         /// </summary>
         public Configuration() {}
         /// <summary>
-        /// Initializes a new instance of the <see cref="Clematis.Configurations.Configuration"/> class.
+        /// Initializes a new instance of the <see cref="Configuration"/> class.
         /// </summary>
         /// <param name="surrounding">Surrounding.</param>
         public Configuration(Surrounding surrounding) {
@@ -180,5 +177,9 @@ namespace Clematis.Configurations {
         /// The default_statement_timeout_.
         /// </summary>
         private int default_statement_timeout_;
+        /// <summary>
+        /// 
+        /// </summary>
+        private  AutoMappingBehavior auto_mapping_behavior_;
     }
 }

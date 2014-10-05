@@ -33,7 +33,7 @@ namespace Clematis.Infrastructure.Mapping {
         /// <param name="id">Identifier.</param>
         /// <param name="transaction_factory">Transaction_factory.</param>
         /// <param name="data_source">Data_source.</param>
-        public Surrounding(string id, TransactionFactory transaction_factory, IDataSource data_source) {
+        public Surrounding(string id, ITransactionFactory transaction_factory, IDataSource data_source) {
             this.id_ = id;
             this.transaction_factory_ = transaction_factory;
             this.data_source_ = data_source;
@@ -58,7 +58,7 @@ namespace Clematis.Infrastructure.Mapping {
         /// Gets the transaction factory.
         /// </summary>
         /// <value>The transaction factory.</value>
-        public TransactionFactory TransactionFactory {
+        public ITransactionFactory TransactionFactory {
             get { return this.transaction_factory_; }
         }
 
@@ -70,7 +70,7 @@ namespace Clematis.Infrastructure.Mapping {
         /// <summary>
         /// The transaction_factory_.
         /// </summary>
-        private TransactionFactory transaction_factory_;
+        private ITransactionFactory transaction_factory_;
         /// <summary>
         /// The data_source_.
         /// </summary>

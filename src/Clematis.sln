@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{44DD88E6-BBD1-4A67-A285-75EAB77DDB9E}"
@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E52684
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clematis.DataSources", "Clematis.DataSources\Clematis.DataSources.csproj", "{B9F378E3-83CA-4FB9-BF3D-05EC39EAD7A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,10 +32,18 @@ Global
 		{5FCCD9FF-A621-400F-B68E-7FC3EC8CD603}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FCCD9FF-A621-400F-B68E-7FC3EC8CD603}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FCCD9FF-A621-400F-B68E-7FC3EC8CD603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F378E3-83CA-4FB9-BF3D-05EC39EAD7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F378E3-83CA-4FB9-BF3D-05EC39EAD7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F378E3-83CA-4FB9-BF3D-05EC39EAD7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F378E3-83CA-4FB9-BF3D-05EC39EAD7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{334C6585-7B3E-45D2-9B35-D3B75B9596DA} = {44DD88E6-BBD1-4A67-A285-75EAB77DDB9E}
 		{5FCCD9FF-A621-400F-B68E-7FC3EC8CD603} = {646DBE24-4E10-4605-AFE0-86D962222AA5}
+		{B9F378E3-83CA-4FB9-BF3D-05EC39EAD7A6} = {44DD88E6-BBD1-4A67-A285-75EAB77DDB9E}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Clematis.Core\Clematis.Core.csproj
@@ -44,8 +54,5 @@ Global
 		$0.DotNetNamingPolicy = $2
 		$2.DirectoryNamespaceAssociation = PrefixedHierarchical
 		$2.ResourceNamePolicy = FileFormatDefault
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

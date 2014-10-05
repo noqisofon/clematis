@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{334C6585-7B3E-45D2-9B35-D3B75B9596DA}</ProjectGuid>
+    <ProjectGuid>{B9F378E3-83CA-4FB9-BF3D-05EC39EAD7A6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Clematis</RootNamespace>
-    <AssemblyName>Clematis.Core</AssemblyName>
+    <AssemblyName>Clematis.DataSources</AssemblyName>
     <DefaultLanguage>ja-JP</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,24 +35,12 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <ProjectReference Include="..\Clematis.DataSources\Clematis.DataSources.csproj">
-      <Project>{b9f378e3-83ca-4fb9-bf3d-05ec39ead7a6}</Project>
-      <Name>Clematis.DataSources</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Infrastructure\Mapping\ResultMap.cs" />
-    <Compile Include="Infrastructure\Sessions\AutoMappingBehavior.cs" />
-    <Compile Include="Infrastructure\Sessions\Configuration.cs" />
-    <Compile Include="Infrastructure\Executors\BatchResult.cs" />
-    <Compile Include="Infrastructure\Sessions\ISqlSession.cs" />
-    <Compile Include="Infrastructure\Mapping\MappedStatement.cs" />
-    <Compile Include="Infrastructure\Sessions\IResultContext.cs" />
-    <Compile Include="Infrastructure\Sessions\RowBounds.cs" />
+    <Compile Include="Database\IDataSource.cs" />
+    <Compile Include="Database\ISqlConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Infrastructure\Mapping\Surrounding.cs" />
-    <Compile Include="Infrastructure\Caching\ICache.cs" />
-    <Compile Include="Infrastructure\Sessions\ExecutorType.cs" />
+    <Compile Include="Transaction\ITransactionFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -62,5 +50,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup />
 </Project>
