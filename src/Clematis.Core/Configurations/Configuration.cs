@@ -20,6 +20,7 @@ using System.Text;
 
 using Clematis.Infrastructure.Caching;
 using Clematis.Infrastructure.Mapping;
+using Clematis.Infrastructure.Sessions;
 
 
 namespace Clematis.Configurations {
@@ -55,7 +56,14 @@ namespace Clematis.Configurations {
         /// </summary>
         /// <value>The caches.</value>
         public IEnumerable<ICache> Caches {
-            get { return this.caches_.Values; }
+            get { return this.caches_.Values.ToArray(); }
+        }
+        /// <summary>
+        /// Gets the cache names.
+        /// </summary>
+        /// <value>The cache names.</value>
+        public IEnumerable<string> CacheNames {
+            get { return this.caches_.Keys.ToArray(); }
         }
         /// <summary>
         /// Gets or sets the database identifier.
@@ -64,6 +72,20 @@ namespace Clematis.Configurations {
         public string DatabaseId {
             get { return this.database_id_; }
             set { this.database_id_ = value; }
+        }
+        /// <summary>
+        /// Gets the default type of the executor.
+        /// </summary>
+        /// <value>The default type of the executor.</value>
+        public ExecutorType DefaultExecutorType {
+            get { return this.default_executor_type_; }
+        }
+        /// <summary>
+        /// Gets the default statement timeout.
+        /// </summary>
+        /// <value>The default statement timeout.</value>
+        public int DefaultStatementTimeout {
+            get { return this.default_statement_timeout_; }
         }
         /// <summary>
         /// Gets or sets the surrounding.
@@ -82,6 +104,16 @@ namespace Clematis.Configurations {
         /// <param name="cache">Cache.</param>
         public void AddCache(ICache cache) {
             this.caches_.Add( cache.Id, cache );
+        }
+
+
+        /// <summary>
+        /// Determines whether this instance has cache the specified id.
+        /// </summary>
+        /// <returns><c>true</c> if this instance has cache the specified id; otherwise, <c>false</c>.</returns>
+        /// <param name="id">Identifier.</param>
+        public bool HasCache(string id) {
+            return this.caches_.ContainsKey( id );
         }
 
 
@@ -109,6 +141,22 @@ namespace Clematis.Configurations {
 
 
         /// <summary>
+        /// Builds all statements.
+        /// </summary>
+        protected void BuildAllStatements() {
+        }
+
+
+        /// <summary>
+        /// Checks the globally for discriminated nested result maps.
+        /// </summary>
+        /// <returns>The globally for discriminated nested result maps.</returns>
+        /// <param name="result_map">Result_map.</param>
+        protected void CheckGloballyForDiscriminatedNestedResultMaps(ResultMap result_map) {
+        }
+
+
+        /// <summary>
         /// The surrounding_.
         /// </summary>
         private Surrounding surrounding_;
@@ -124,5 +172,13 @@ namespace Clematis.Configurations {
         /// The caches_ref_map_.
         /// </summary>
         private IDictionary<string, string> caches_ref_map_;
+        /// <summary>
+        /// The default_executor_type_.
+        /// </summary>
+        private ExecutorType default_executor_type_;
+        /// <summary>
+        /// The default_statement_timeout_.
+        /// </summary>
+        private int default_statement_timeout_;
     }
 }

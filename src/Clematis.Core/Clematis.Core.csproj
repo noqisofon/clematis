@@ -48,6 +48,7 @@
     <Compile Include="Infrastructure\Caching\ICache.cs" />
     <Compile Include="Database\IDataSource.cs" />
     <Compile Include="Database\ISqlConnection.cs" />
+    <Compile Include="Infrastructure\Sessions\ExecuteType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
