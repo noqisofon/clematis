@@ -37,6 +37,7 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\DatabaseMetaData.cs" />
     <Compile Include="Database\IDataSource.cs" />
     <Compile Include="Database\ISqlConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

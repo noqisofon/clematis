@@ -41,7 +41,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\Mapping\ParamterMode.cs" />
     <Compile Include="Infrastructure\Mapping\ResultMap.cs" />
+    <Compile Include="Infrastructure\Mapping\ResultMapping.cs" />
+    <Compile Include="Infrastructure\Mapping\SqlType.cs" />
     <Compile Include="Infrastructure\Sessions\AutoMappingBehavior.cs" />
     <Compile Include="Infrastructure\Sessions\Configuration.cs" />
     <Compile Include="Infrastructure\Executors\BatchResult.cs" />

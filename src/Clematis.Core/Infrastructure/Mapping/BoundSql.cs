@@ -37,7 +37,7 @@ namespace Clematis.Infrastructure.Mapping {
         public BoundSql(Configuration configuration, string sql_query, IEnumerable<ParameterMapping> parameter_mappings, object parameter_object) {
             this.configuration_     = configuration;
             this.sql_query_         = sql_query;
-            if ( parameter_mapping == null ) {
+            if ( parameter_mappings == null ) {
                 this.parameter_mappings_ = new List<ParameterMapping>();
             } else {
                 this.parameter_mappings_ = parameter_mappings.ToList();
@@ -111,6 +111,10 @@ namespace Clematis.Infrastructure.Mapping {
         /// The additional_parameter_.
         /// </summary>
         private IDictionary<string, object> additional_parameter_;
+        /// <summary>
+        /// 
+        /// </summary>
+        private object parameter_object_;
     }
 }
 
