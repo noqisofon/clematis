@@ -14,40 +14,37 @@
 //    limitations under the License.
 //
 using System;
-using System.IO;
 
 
-namespace Clematis.Database {
+namespace Clematis.Infrastructure.Mapping {
 
 
     /// <summary>
-    /// I data source.
+    /// Parameter mapping.
     /// </summary>
-    public interface IDataSource {
+    public class ParameterMapping {
         /// <summary>
-        /// Gets or sets the login timeout.
+        /// Initializes a new instance of the <see cref="Clematis.Infrastructure.Mapping.ParameterMapping"/> class.
         /// </summary>
-        /// <value>The login timeout.</value>
-        int LoginTimeout { get; set; }
-        /// <summary>
-        /// Gets or sets the log writer.
-        /// </summary>
-        /// <value>The log writer.</value>
-        TextWriter LogWriter { get; set; }
+        protected ParameterMapping() {
+        }
 
 
         /// <summary>
-        /// Gets the connection.
+        /// Gets or sets the type of the clr.
         /// </summary>
-        /// <returns>The connection.</returns>
-        ISqlConnection GetConnection();
+        /// <value>The type of the clr.</value>
+        public Type ClrType { get; internal set; }
         /// <summary>
-        /// Gets the connection.
+        /// Gets or sets the type of the sql.
         /// </summary>
-        /// <returns>The connection.</returns>
-        /// <param name="user_name">User_name.</param>
-        /// <param name="password">Password.</param>
-        ISqlConnection GetConnection(string user_name, string password);
+        /// <value>The type of the sql.</value>
+        public SqlType SqlType { get; internal set; }
+        /// <summary>
+        /// Gets or sets the mode.
+        /// </summary>
+        /// <value>The mode.</value>
+        public ParamterMode Mode { get; internal set; }
     }
 }
 

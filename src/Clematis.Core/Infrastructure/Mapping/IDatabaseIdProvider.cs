@@ -14,17 +14,31 @@
 //    limitations under the License.
 //
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
+using Clematis.Database;
 
 
-namespace Clematis.Transaction {
+namespace Clematis.Infrastructure.Mapping {
 
 
     /// <summary>
-    /// 
+    /// I database identifier provider.
     /// </summary>
-    public interface ITransactionFactory {
+    public interface IDatabaseIdProvider {
+        /// <summary>
+        /// Gets the database identifier.
+        /// </summary>
+        /// <returns>The database identifier.</returns>
+        /// <param name="data_source">Data_source.</param>
+        string GetDatabaseId(IDataSource data_source);
+
+
+        /// <summary>
+        /// Sets the properties.
+        /// </summary>
+        /// <returns>The properties.</returns>
+        /// <param name="properties">Properties.</param>
+        void SetProperties(IDictionary<string, object> properties);
     }
 }
+

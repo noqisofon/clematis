@@ -36,7 +36,7 @@
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
     <ProjectReference Include="..\Clematis.DataSources\Clematis.DataSources.csproj">
-      <Project>{b9f378e3-83ca-4fb9-bf3d-05ec39ead7a6}</Project>
+      <Project>{B9F378E3-83CA-4FB9-BF3D-05EC39EAD7A6}</Project>
       <Name>Clematis.DataSources</Name>
     </ProjectReference>
   </ItemGroup>
@@ -53,6 +53,9 @@
     <Compile Include="Infrastructure\Mapping\Surrounding.cs" />
     <Compile Include="Infrastructure\Caching\ICache.cs" />
     <Compile Include="Infrastructure\Sessions\ExecutorType.cs" />
+    <Compile Include="Infrastructure\Mapping\IDatabaseIdProvider.cs" />
+    <Compile Include="Infrastructure\Mapping\BoundSql.cs" />
+    <Compile Include="Infrastructure\Mapping\ParameterMapping.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
