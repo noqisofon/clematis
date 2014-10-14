@@ -17,8 +17,20 @@ namespace Clematis.Infrastructure.Mapping {
 
     
     /// <summary>
-    /// 
+    /// Parameter mode.
     /// </summary>
-    public enum ParamterMode {
+    public enum ParameterMode {
+        /// <summary>
+        /// The in.
+        /// </summary>
+        In,
+        /// <summary>
+        /// The in out.
+        /// </summary>
+        InOut,
+        /// <summary>
+        /// The out.
+        /// </summary>
+        Out
     }
 }

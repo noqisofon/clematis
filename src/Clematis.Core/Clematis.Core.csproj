@@ -41,7 +41,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Infrastructure\Mapping\ParamterMode.cs" />
     <Compile Include="Infrastructure\Mapping\ResultMap.cs" />
     <Compile Include="Infrastructure\Mapping\ResultMapping.cs" />
     <Compile Include="Infrastructure\Mapping\SqlType.cs" />
@@ -59,6 +58,8 @@
     <Compile Include="Infrastructure\Mapping\IDatabaseIdProvider.cs" />
     <Compile Include="Infrastructure\Mapping\BoundSql.cs" />
     <Compile Include="Infrastructure\Mapping\ParameterMapping.cs" />
+    <Compile Include="Infrastructure\Mapping\ParameterMode.cs" />
+    <Compile Include="Infrastructure\Mapping\CacheBuilder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
