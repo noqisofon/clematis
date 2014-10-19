@@ -132,6 +132,8 @@ namespace Clematis.Infrastructure.Sessions {
         /// <param name="id">Identifier.</param>
         public ICache GetCache(string id) {
             if ( !this.caches_.ContainsKey( id ) ) {
+
+                return null;
             }
             return this.caches_[id];
         }

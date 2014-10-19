@@ -44,7 +44,7 @@ namespace Clematis.Infrastructure.Mapping {
         /// Gets or sets the mode.
         /// </summary>
         /// <value>The mode.</value>
-        public ParamterMode Mode { get; internal set; }
+        public ParameterMode Mode { get; internal set; }
     }
 }
 
