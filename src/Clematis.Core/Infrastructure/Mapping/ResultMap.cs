@@ -27,6 +27,17 @@ namespace Clematis.Infrastructure.Mapping {
     /// </summary>
     public class ResultMap {
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        public ResultMap(string id) {
+            this.id_ = id;
+            this.auto_mapping_ = false;
+            this.constructor_result_mappings_ = new List<ResultMapping>();
+        }
+
+
+        /// <summary>
         /// Gets the auto mapping.
         /// </summary>
         /// <value>The auto mapping.</value>
